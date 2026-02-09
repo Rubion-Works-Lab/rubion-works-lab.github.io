@@ -229,40 +229,82 @@
                         本プライバシーポリシーは、「Rubion works lab」（以下、「当方」といいます）が提供するスマートフォン用アプリケーション「Yuru Diary」（以下、「当アプリ」といいます）における、ユーザー情報の取り扱いについて定めたものです。
                     </p>
 
+                    <!-- 1. 定義は省略し、2. 収集する情報から開始 -->
+
                     <div class="bg-white/50 p-6 rounded-xl border border-white shadow-sm hover:border-warm-100 transition-colors">
                         <h4 class="font-bold text-slate-800 mb-4 flex items-center gap-2">
-                            <span class="w-2 h-2 bg-warm-400 rounded-full"></span> 1. 取得する情報とその利用目的
+                            <span class="w-2 h-2 bg-warm-400 rounded-full"></span> 2. 収集する情報とその利用目的
                         </h4>
-                        <ul class="space-y-4 ml-2">
-                            <li class="flex gap-4">
-                                <div class="flex-1">
-                                    <span class="font-bold text-slate-700 block mb-1">広告配信のための情報取得</span>
-                                    <span class="text-slate-500">当アプリでは、広告配信ツールとしてGoogle AdMobを使用しています。これにより、広告ID等のデバイス情報が自動的に取得される場合があります。これらは個人を特定するものではありません。</span>
-                                </div>
-                            </li>
-                            <li class="flex gap-4">
-                                <div class="flex-1">
-                                    <span class="font-bold text-slate-700 block mb-1">アプリの利用状況の解析</span>
-                                    <span class="text-slate-500">当アプリの機能改善や不具合修正のため、Google Firebase Analyticsを使用しています。これにより、アプリの利用頻度、クラッシュ情報、デバイス情報等が匿名で送信されます。</span>
-                                </div>
-                            </li>
-                            <li class="flex gap-4">
-                                <div class="flex-1">
-                                    <span class="font-bold text-slate-700 block mb-1">入力データの保存場所</span>
-                                    <span class="text-slate-500">ユーザーが入力した日記データは、すべてユーザー自身の端末内（ローカルストレージ）にのみ保存されます。開発者がこれらを収集・送信することは一切ありません。</span>
-                                </div>
-                            </li>
-                        </ul>
+                        <p class="mb-4 text-slate-600">本アプリでは、アプリの品質向上および広告配信のために、以下の第三者サービスを利用して利用者情報を自動的に取得する場合があります。これらの情報は個人を特定するものではありません。</p>
+                        
+                        <div class="space-y-6 ml-2">
+                            <!-- 2.1 Firebase -->
+                            <div>
+                                <h5 class="font-bold text-slate-700 text-sm mb-2">2.1 Firebase Analytics / Crashlytics (Google Inc.)</h5>
+                                <ul class="list-disc list-inside space-y-1 text-slate-500 pl-2">
+                                    <li><span class="font-medium text-slate-600">収集する情報:</span> アプリの利用状況（画面遷移、滞在時間など）、クラッシュログ（不具合発生時の状況）、デバイス情報</li>
+                                    <li><span class="font-medium text-slate-600">利用目的:</span> アプリの機能改善、不具合の修正、利用統計の分析のため</li>
+                                    <li><a href="https://policies.google.com/privacy" target="_blank" class="text-brand hover:underline">Google プライバシーポリシー</a></li>
+                                </ul>
+                            </div>
+
+                            <!-- 2.2 AdMob -->
+                            <div>
+                                <h5 class="font-bold text-slate-700 text-sm mb-2">2.2 Google AdMob (Google Inc.)</h5>
+                                <ul class="list-disc list-inside space-y-1 text-slate-500 pl-2">
+                                    <li><span class="font-medium text-slate-600">収集する情報:</span> 広告ID（Advertising ID）、デバイス情報、広告データの配信・表示・クリックに関する情報</li>
+                                    <li><span class="font-medium text-slate-600">利用目的:</span> ユーザーに適した広告の配信、広告掲載効果の測定のため</li>
+                                    <li><a href="https://policies.google.com/technologies/ads" target="_blank" class="text-brand hover:underline">Google 広告 – ポリシーと規約</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/50 p-6 rounded-xl border border-white shadow-sm hover:border-warm-100 transition-colors">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-warm-400 rounded-full"></span> 3. 利用者情報の第三者提供
+                        </h4>
+                        <p class="text-slate-600">
+                            当方は、法令に基づく場合を除き、取得した利用者情報を第三者に提供することはありません。ただし、上記2項に記載した情報収集モジュール提供者へは、それぞれの利用目的の範囲内で情報が自動送信されます。
+                        </p>
+                    </div>
+
+                    <div class="bg-white/50 p-6 rounded-xl border border-white shadow-sm hover:border-warm-100 transition-colors">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-warm-400 rounded-full"></span> 4. 日記データの取り扱い
+                        </h4>
+                        <p class="text-slate-600">
+                            本アプリで入力された日記データ（テキスト、画像パス、気分スコア等）は、利用者の端末内部にのみ保存されます。当方のサーバー等へ送信・保存されることはありません。<br>
+                            バックアップ機能によりユーザー自身がデータを外部に出力した場合、そのデータの管理はユーザー自身の責任となります。
+                        </p>
+                    </div>
+
+                    <div class="bg-white/50 p-6 rounded-xl border border-white shadow-sm hover:border-warm-100 transition-colors">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-warm-400 rounded-full"></span> 5. 免責事項
+                        </h4>
+                        <p class="text-slate-600">
+                            本アプリが提供するサービスは、現状有姿で提供されます。本アプリの利用により生じた損害について、当方は法令で認められる範囲において責任を負わないものとします。
+                        </p>
+                    </div>
+
+                    <div class="bg-white/50 p-6 rounded-xl border border-white shadow-sm hover:border-warm-100 transition-colors">
+                        <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-warm-400 rounded-full"></span> 6. プライバシーポリシーの変更
+                        </h4>
+                        <p class="text-slate-600">
+                            当方は、法令の改正や事業上の必要性等に応じて、本ポリシーを変更することがあります。変更後のポリシーは、本アプリ内または配布サイト上に掲載した時点から効力を生じるものとします。
+                        </p>
                     </div>
 
                     <div class="bg-white/50 p-6 rounded-xl border border-white shadow-sm hover:border-warm-100 transition-colors">
                         <h4 class="font-bold text-slate-800 mb-4 flex items-center gap-2">
-                            <span class="w-2 h-2 bg-warm-400 rounded-full"></span> 2. お問い合わせ
+                            <span class="w-2 h-2 bg-warm-400 rounded-full"></span> 7. お問い合わせ
                         </h4>
-                        <p class="mb-3 text-slate-500">当アプリに関するお問い合わせは、以下のメールアドレスまでお願いいたします。</p>
+                        <p class="mb-3 text-slate-500">本ポリシーに関するお問い合わせは、以下までお願いいたします。</p>
                         <div class="flex items-center gap-3">
                             <span class="font-mono text-warm-500 font-medium bg-warm-50 px-4 py-2 rounded-lg select-all border border-warm-100">
-                                rubionworkslab@outlook.com
+                                rubion14@outlook.com
                             </span>
                         </div>
                     </div>
