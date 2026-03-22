@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プライバシーポリシー | Rubion works lab</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0',
+                            300: '#cbd5e1', 400: '#94a3b8', 500: '#64748b',
+                            600: '#475569', 700: '#334155', 800: '#1e293b', 900: '#0f172a',
+                        },
+                        brand: { light: '#e0e7ff', DEFAULT: '#4338ca', dark: '#312e81' },
+                        lilac: { 50: '#f5f3ff', 100: '#ede9fe', 500: '#8b5cf6' },
+                        warm: {
+                            50: '#fff7ed', 100: '#ffedd5',
+                            400: '#fb923c', 500: '#f97316', rose: '#fda4af',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        serif: ['"Shippori Mincho"', 'serif'],
+                        mono: ['"Roboto Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        .tech-bg {
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(#e2e8f0 1px, transparent 1px),
+                linear-gradient(135deg, #fff7ed 0%, #f5f3ff 60%, #e0e7ff 100%);
+            background-size: 24px 24px, 100% 100%;
+            background-position: 0 0, 0 0;
+            background-repeat: repeat, no-repeat;
+            background-attachment: fixed;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased tech-bg min-h-screen flex flex-col text-slate-700">
+
+    <!-- ナビゲーションバー -->
+    <nav class="w-full glass-panel border-b border-slate-200/50 fixed top-0 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2">
+                <div class="w-2 h-8 bg-gradient-to-b from-brand to-warm-rose rounded-full"></div>
+                <div class="font-bold text-slate-900 tracking-tight text-lg font-serif">
+                    Rubion works lab.
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm text-slate-600 font-medium">
+                <a href="../index.html#about" class="hover:text-warm-500 transition-colors">About</a>
+                <a href="../index.html#products" class="hover:text-warm-500 transition-colors">Products</a>
+                <a href="privacy-policy.html" class="text-brand font-semibold">Privacy</a>
+                <a href="terms.html" class="hover:text-warm-500 transition-colors">Terms</a>
+                <a href="tokushoho.html" class="hover:text-warm-500 transition-colors">特定商取引法</a>
+            </div>
+            <a href="../index.html" class="text-xs font-mono text-slate-600 font-medium bg-warm-50/80 px-3 py-1 rounded-full border border-warm-100 flex items-center gap-2 hover:bg-warm-100 transition-colors">
+                ← ホームへ
+            </a>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="flex-grow pt-24 pb-20 px-6">
+        <div class="max-w-3xl mx-auto">
+
+            <!-- タイトル -->
+            <div class="text-center mb-12">
+                <p class="text-xs font-mono text-slate-400 tracking-[0.3em] uppercase mb-3">Legal</p>
+                <h1 class="text-3xl md:text-4xl font-serif font-medium text-slate-900 mb-4">
+                    プライバシーポリシー
+                </h1>
+                <p class="text-sm text-slate-500">最終更新日：2026年3月22日</p>
+            </div>
+
+            <!-- 本文 -->
+            <div class="glass-panel rounded-2xl p-8 md:p-12 space-y-10 text-slate-700 leading-relaxed">
+
+                <section>
+                    <p>
+                        Rubion works lab（以下「当社」）は、当社が提供するアプリケーション「Only Task」（以下「本アプリ」）における
+                        ユーザーの個人情報の取り扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」）を定めます。
+                    </p>
+                </section>
+
+                <!-- 1 -->
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-l-4 border-brand pl-4 mb-4">
+                        1. 収集する情報
+                    </h2>
+                    <p class="mb-4">本アプリは以下の情報を収集する場合があります。</p>
+                    <div class="space-y-4">
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h3 class="font-semibold text-slate-800 mb-2">（1）ユーザーが入力した情報</h3>
+                            <p class="text-sm text-slate-600">
+                                タスクのテキスト、お気に入り設定など、ユーザーが本アプリに直接入力した情報。
+                                これらはデバイス内（AsyncStorage）にのみ保存され、外部サーバーには送信されません。
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h3 class="font-semibold text-slate-800 mb-2">（2）広告に関する情報（AdMob）</h3>
+                            <p class="text-sm text-slate-600">
+                                本アプリはGoogle AdMobを利用した広告を表示します。AdMobはデバイスの広告IDをはじめとする情報を
+                                収集・利用することがあります。収集・利用される情報の詳細はGoogleのプライバシーポリシーをご参照ください。<br>
+                                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
+                                   class="text-brand hover:underline text-xs mt-1 inline-block">
+                                    Googleプライバシーポリシー →
+                                </a>
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h3 class="font-semibold text-slate-800 mb-2">（3）購入・課金に関する情報</h3>
+                            <p class="text-sm text-slate-600">
+                                有料プランへのアップグレード時は、Google Playの課金システムを通じて処理されます。
+                                クレジットカード情報等の決済情報は当社では一切取得・保存しません。
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 rounded-xl p-5">
+                            <h3 class="font-semibold text-slate-800 mb-2">（4）クラッシュ・利用状況レポート</h3>
+                            <p class="text-sm text-slate-600">
+                                アプリの安定性向上のため、クラッシュ情報や利用状況の匿名データが
+                                Expoまたはシステムによって収集される場合があります。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2 -->
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-l-4 border-brand pl-4 mb-4">
+                        2. 情報の利用目的
+                    </h2>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 ml-2">
+                        <li>本アプリのサービス提供および機能向上</li>
+                        <li>広告の表示（Google AdMobによるパーソナライズ広告を含む）</li>
+                        <li>有料プランの管理</li>
+                        <li>アプリのバグ修正・品質改善</li>
+                    </ul>
+                </section>
+
+                <!-- 3 -->
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-l-4 border-brand pl-4 mb-4">
+                        3. 第三者への情報提供
+                    </h2>
+                    <p class="text-sm text-slate-600 mb-3">
+                        当社は、以下の場合を除き、ユーザーの個人情報を第三者に提供・開示しません。
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 text-sm text-slate-600 ml-2">
+                        <li>ユーザーの同意がある場合</li>
+                        <li>法令に基づき開示が必要な場合</li>
+                        <li>広告配信のためGoogle AdMobへ提供する場合（Googleのポリシーに従います）</li>
+                    </ul>
+                </section>
+
+                <!-- 4 -->
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-l-4 border-brand pl-4 mb-4">
+                        4. 子どものプライバシー（COPPA・児童オンラインプライバシー）
+                    </h2>
+                    <p class="text-sm text-slate-600">
+                        本アプリは13歳未満の子どもを対象としていません。
+                        13歳未満のユーザーから意図的に個人情報を収集することはありません。
+                        13歳未満の方は本アプリをご利用にならないようお願いします。
+                        万一、13歳未満の個人情報が収集されていることが判明した場合は、
+                        速やかに削除いたします。
+                    </p>
+                </section>
+
+                <!-- 5 -->
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-l-4 border-brand pl-4 mb-4">
+                        5. データの保管とセキュリティ
+                    </h2>
+                    <p class="text-sm text-slate-600">
+                        ユーザーが入力したタスク等のデータは、ユーザーのデバイス内にのみ保存されます。
+                        アプリの削除やデバイスのストレージクリアによってデータが失われる場合があります。
+                        当社は合理的なセキュリティ対策を講じますが、完全な安全性を保証するものではありません。
+                    </p>
+                </section>
+
+                <!-- 6 -->
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-l-4 border-brand pl-4 mb-4">
+                        6. 広告のオプトアウト
+                    </h2>
+                    <p class="text-sm text-slate-600">
+                        パーソナライズ広告を希望しない場合は、お使いのAndroidデバイスの設定から
+                        「広告のパーソナライズをオプトアウト」または「広告IDをリセット」することができます。
+                    </p>
+                </section>
+
+                <!-- 7 -->
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-l-4 border-brand pl-4 mb-4">
+                        7. ポリシーの変更
+                    </h2>
+                    <p class="text-sm text-slate-600">
+                        本ポリシーの内容は、必要に応じて変更することがあります。
+                        重要な変更がある場合は、本ページにて通知します。
+                        変更後も本アプリをご利用いただいた場合、変更後のポリシーに同意したものとみなします。
+                    </p>
+                </section>
+
+                <!-- 8 -->
+                <section>
+                    <h2 class="text-lg font-bold text-slate-900 border-l-4 border-brand pl-4 mb-4">
+                        8. お問い合わせ
+                    </h2>
+                    <p class="text-sm text-slate-600">
+                        本ポリシーに関するご質問・ご意見は、Google Play ストアの
+                        「開発者に連絡」機能またはGoogle Play Consoleに登録のメールアドレスよりご連絡ください。
+                    </p>
+                </section>
+
+            </div>
+
+            <!-- 他のリーガルページへのリンク -->
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="terms.html"
+                   class="glass-panel rounded-xl p-5 flex items-center justify-between hover:shadow-md transition-shadow group">
+                    <div>
+                        <p class="text-xs font-mono text-slate-400 mb-1">Legal</p>
+                        <p class="font-semibold text-slate-800 group-hover:text-brand transition-colors">利用規約</p>
+                    </div>
+                    <span class="text-slate-400 group-hover:text-brand transition-colors text-xl">›</span>
+                </a>
+                <a href="tokushoho.html"
+                   class="glass-panel rounded-xl p-5 flex items-center justify-between hover:shadow-md transition-shadow group">
+                    <div>
+                        <p class="text-xs font-mono text-slate-400 mb-1">Legal</p>
+                        <p class="font-semibold text-slate-800 group-hover:text-brand transition-colors">特定商取引法に基づく表示</p>
+                    </div>
+                    <span class="text-slate-400 group-hover:text-brand transition-colors text-xl">›</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="border-t border-slate-200 py-8 px-6 text-center text-xs text-slate-400 font-mono">
+        <p>© 2026 Rubion works lab. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

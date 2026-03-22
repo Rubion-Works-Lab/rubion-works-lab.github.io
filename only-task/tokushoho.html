@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特定商取引法に基づく表示 | Rubion works lab</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0',
+                            300: '#cbd5e1', 400: '#94a3b8', 500: '#64748b',
+                            600: '#475569', 700: '#334155', 800: '#1e293b', 900: '#0f172a',
+                        },
+                        brand: { light: '#e0e7ff', DEFAULT: '#4338ca', dark: '#312e81' },
+                        lilac: { 50: '#f5f3ff', 100: '#ede9fe', 500: '#8b5cf6' },
+                        warm: {
+                            50: '#fff7ed', 100: '#ffedd5',
+                            400: '#fb923c', 500: '#f97316', rose: '#fda4af',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                        serif: ['"Shippori Mincho"', 'serif'],
+                        mono: ['"Roboto Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        .tech-bg {
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(#e2e8f0 1px, transparent 1px),
+                linear-gradient(135deg, #fff7ed 0%, #f5f3ff 60%, #e0e7ff 100%);
+            background-size: 24px 24px, 100% 100%;
+            background-position: 0 0, 0 0;
+            background-repeat: repeat, no-repeat;
+            background-attachment: fixed;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased tech-bg min-h-screen flex flex-col text-slate-700">
+
+    <!-- ナビゲーションバー -->
+    <nav class="w-full glass-panel border-b border-slate-200/50 fixed top-0 z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2">
+                <div class="w-2 h-8 bg-gradient-to-b from-brand to-warm-rose rounded-full"></div>
+                <div class="font-bold text-slate-900 tracking-tight text-lg font-serif">
+                    Rubion works lab.
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm text-slate-600 font-medium">
+                <a href="../index.html#about" class="hover:text-warm-500 transition-colors">About</a>
+                <a href="../index.html#products" class="hover:text-warm-500 transition-colors">Products</a>
+                <a href="privacy-policy.html" class="hover:text-warm-500 transition-colors">Privacy</a>
+                <a href="terms.html" class="hover:text-warm-500 transition-colors">Terms</a>
+                <a href="tokushoho.html" class="text-brand font-semibold">特定商取引法</a>
+            </div>
+            <a href="../index.html" class="text-xs font-mono text-slate-600 font-medium bg-warm-50/80 px-3 py-1 rounded-full border border-warm-100 flex items-center gap-2 hover:bg-warm-100 transition-colors">
+                ← ホームへ
+            </a>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="flex-grow pt-24 pb-20 px-6">
+        <div class="max-w-3xl mx-auto">
+
+            <!-- タイトル -->
+            <div class="text-center mb-12">
+                <p class="text-xs font-mono text-slate-400 tracking-[0.3em] uppercase mb-3">Legal</p>
+                <h1 class="text-3xl md:text-4xl font-serif font-medium text-slate-900 mb-4">
+                    特定商取引法に基づく表示
+                </h1>
+                <p class="text-sm text-slate-500">最終更新日：2026年3月22日</p>
+            </div>
+
+            <!-- 注意書き -->
+            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-8 text-sm text-amber-800">
+                <p class="font-semibold mb-1">⚠️ 重要なご案内</p>
+                <p>
+                    本表示は特定商取引法に基づき、有料サービスの販売者情報を開示するものです。
+                    有料プランは現在準備中です。正式リリース時に更新いたします。
+                </p>
+            </div>
+
+            <!-- テーブル形式の表示 -->
+            <div class="glass-panel rounded-2xl overflow-hidden">
+                <table class="w-full text-sm">
+                    <tbody>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 w-2/5 align-top">
+                                販売業者
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                Rubion works lab
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                運営責任者
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                非公開
+                                <p class="text-xs text-slate-400 mt-1">
+                                    ※ご請求があった場合は、遅滞なく開示いたします。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                所在地
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                非公開
+                                <p class="text-xs text-slate-400 mt-1">
+                                    ※ご請求があった場合は、遅滞なく開示いたします。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                電話番号
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                非公開
+                                <p class="text-xs text-slate-400 mt-1">
+                                    ※ご請求があった場合は、遅滞なく開示いたします。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                お問い合わせ
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                Google Play ストアの「開発者に連絡」よりお問い合わせください。
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                販売価格
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                Google Play ストアの各商品ページに表示される価格（消費税込み）
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                商品代金以外の必要料金
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                なし（インターネット接続に必要な通信費はユーザー負担）
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                お支払い方法
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                Google Play が提供する決済手段（クレジットカード・キャリア決済等）
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                お支払い時期
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                購入手続き完了時（Google Play の規定に従います）
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                サービス提供時期
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                購入手続き完了後、即時にご利用いただけます。
+                            </td>
+                        </tr>
+                        <tr class="border-b border-slate-100">
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                返品・キャンセルについて
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                <p>
+                                    デジタルコンテンツの特性上、購入後の返金・キャンセルは原則お受けできません。
+                                </p>
+                                <p class="mt-2">
+                                    ただし、Google Play のポリシーに基づき、購入後48時間以内は
+                                    Google Play より返金申請が可能な場合があります。
+                                </p>
+                                <p class="mt-2">
+                                    なお、消費者契約法に基づく取り消しについてはこの限りではありません。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left px-6 py-5 font-semibold text-slate-700 bg-slate-50/50 align-top">
+                                動作環境
+                            </th>
+                            <td class="px-6 py-5 text-slate-600">
+                                Android 10以上（推奨）
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 補足説明 -->
+            <div class="mt-8 glass-panel rounded-xl p-6 text-sm text-slate-600 space-y-3">
+                <p class="font-semibold text-slate-700">個人情報の非公開について</p>
+                <p>
+                    本表示において住所・電話番号等を「非公開」としているのは、
+                    個人事業主・個人開発者として正当な理由がある場合に認められる方法です（消費者庁ガイドライン参照）。
+                    お問い合わせいただいた際や、法的に必要な場合は速やかに開示いたします。
+                </p>
+            </div>
+
+            <!-- 他のリーガルページへのリンク -->
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="privacy-policy.html"
+                   class="glass-panel rounded-xl p-5 flex items-center justify-between hover:shadow-md transition-shadow group">
+                    <div>
+                        <p class="text-xs font-mono text-slate-400 mb-1">Legal</p>
+                        <p class="font-semibold text-slate-800 group-hover:text-brand transition-colors">プライバシーポリシー</p>
+                    </div>
+                    <span class="text-slate-400 group-hover:text-brand transition-colors text-xl">›</span>
+                </a>
+                <a href="terms.html"
+                   class="glass-panel rounded-xl p-5 flex items-center justify-between hover:shadow-md transition-shadow group">
+                    <div>
+                        <p class="text-xs font-mono text-slate-400 mb-1">Legal</p>
+                        <p class="font-semibold text-slate-800 group-hover:text-brand transition-colors">利用規約</p>
+                    </div>
+                    <span class="text-slate-400 group-hover:text-brand transition-colors text-xl">›</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッター -->
+    <footer class="border-t border-slate-200 py-8 px-6 text-center text-xs text-slate-400 font-mono">
+        <p>© 2026 Rubion works lab. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
